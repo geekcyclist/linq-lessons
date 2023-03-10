@@ -21,7 +21,6 @@
 
 void Main()
 {
-
 	//Chinook sample database - included with LINQPad
 	// https://github.com/lerocha/chinook-database
 
@@ -36,9 +35,7 @@ void Main()
 		.Last(a => a.Title.StartsWith("A"));
 	lastTitleWithAChained.Dump();
 
-	//RunBenchmark(); return;  // Uncomment this line to initiate benchmarking.
-
-
+	//RunBenchmark(); return;
 }
 
 [Benchmark]
