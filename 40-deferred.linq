@@ -15,7 +15,7 @@ https://samwalpole.com/linq-beware-of-deferred-execution
 */
 void Main()
 {
-	var slcNetPresentation = new PresentationInfo("Gary Ray", "gary.ray@gmail.com", "https://");
+	var slcNetPresentation = new PresentationInfo("Gary Ray", "gary.ray@gmail.com", "https://github.com/geekcyclist/linq-lessons");
 	slcNetPresentation.Dump("Thank You!");
 }
 
