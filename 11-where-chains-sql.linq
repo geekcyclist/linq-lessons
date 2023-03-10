@@ -36,7 +36,7 @@ void Main()
 		.Last(a => a.Title.StartsWith("A"));
 	lastTitleWithAChained.Dump();
 
-	RunBenchmark(); return;  // Uncomment this line to initiate benchmarking.
+	//RunBenchmark(); return;  // Uncomment this line to initiate benchmarking.
 
 
 }

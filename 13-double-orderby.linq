@@ -19,4 +19,7 @@ void Main()
 {
 	var sortedAlbums = Albums.OrderBy(a => a.Artist).OrderBy(a => a.Title);
 	sortedAlbums.Dump();
+
+	//var properlySortedAlbums = Albums.OrderBy(a => a.Artist).ThenBy(a => a.Title);
+	//properlySortedAlbums.Dump();
 }

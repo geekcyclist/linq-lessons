@@ -26,4 +26,5 @@ foreach (var chunk in chunkedAlbums)
 // Db Providers require casting to an enumerable type
 //  so if you have large data sets you may need to still
 //  look at other chunking methods.
-// Consider a proc with OFFSET...FETCH https://www.sqlservertutorial.net/sql-server-basics/sql-server-offset-fetch/
+// Consider a proc with OFFSET...FETCH 
+// https://www.sqlservertutorial.net/sql-server-basics/sql-server-offset-fetch/

@@ -9,25 +9,26 @@ void Main()
 	var allEmployess = employees.Union(repo.GetRecentEmployees(), new EmployeeComparer());
 	allEmployess.Dump("Union with Comparer");
 	
-	// the [set]By extensions takes a keySelector. The keySelector is used as the comparative discriminator of the source type.
-	// Using unionBy and comparing by id
-	var unionBy = employees.UnionBy(repo.GetRecentEmployees(), e => e.Id);
-	unionBy.Dump("UnionBy");
+	// The [set]By extensions takes a keySelector. The keySelector is used as the comparative discriminator of the source type.
+	// Order Matters! Priority given to first set.
 	
+	// Using unionBy and comparing by id
+	//var unionBy = employees.UnionBy(repo.GetRecentEmployees(), e => e.Id);
+	//unionBy.Dump("UnionBy");
 	// similar extensions
 
 	// IntersectBy: get all from the first set where the comparison intersects the second set
-	var intersectBy = employees.IntersectBy(repo.GetRecentEmployees(), emp => emp);
-	intersectBy.Dump("IntersectBy");
+	//var intersectBy = employees.IntersectBy(repo.GetRecentEmployees(), emp => emp);
+	//intersectBy.Dump("IntersectBy");
 	
 	// DistinctBy - differentiate based on the keySelector and return the first instance of each type
-	var distinctBy = employees.DistinctBy(e => e.Department);
-	distinctBy.Dump("DistinctBy");
+	//var distinctBy = employees.DistinctBy(e => e.Department);
+	//distinctBy.Dump("DistinctBy");
 	
 
 	// ExceptBy: get all from the first set excluding those whose key is in the second set
-	var exceptBy = employees.ExceptBy(repo.GetRecentEmployees().Select(r => r.Id ), e => e.Id);
-	exceptBy.Dump("ExceptBy");
+	//var exceptBy = employees.ExceptBy(repo.GetRecentEmployees().Select(r => r.Id ), e => e.Id);
+	//exceptBy.Dump("ExceptBy");
 
 }
 

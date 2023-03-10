@@ -12,6 +12,9 @@ Immediate or Greedy Operators:
 Resource:
 https://samwalpole.com/linq-beware-of-deferred-execution
 
+.NET 7 Performance:
+https://devblogs.microsoft.com/dotnet/performance_improvements_in_net_7/
+
 */
 void Main()
 {
