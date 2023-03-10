@@ -16,7 +16,6 @@
 </Query>
 
 /*
-
 The typical way to count the number of elements on an IEnumerable<T> is through the Count() method. 
 This Count() method will already do some optimizations. 
 It will first check if the IEnumerable<T> can be cast to an ICollection<T>. 

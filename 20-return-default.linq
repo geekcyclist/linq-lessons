@@ -22,7 +22,7 @@ void Main()
 	//var defaultEmployee = repo.Employees().FirstOrDefault(e => e.Id == 8, new Employee(0, "", "", ""));
 	//defaultEmployee.Dump();
 
-	//still returns exception if multiple
+	//still returns exception if multiple values returned!
 	//var singleEmployee = repo.Employees().SingleOrDefault(e => e.FirstName == "David", new Employee(0, "", "", ""));
 	//singleEmployee.Dump();
 

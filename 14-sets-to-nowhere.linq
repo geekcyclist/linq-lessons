@@ -11,7 +11,7 @@ void Main()
 	employees.Dump("Unioned set 'disappears'");
 	
 	//Correct Union - Preferred becasue it leaves original collections intact
-	//var allEmployees = employees.Union(repo.RecentEmployees());
+	//var allEmployees = employees.Union(repo.GetRecentEmployees());
 	//allEmployees.Dump("New variable holds unioned set without cast");
 	
 	//Works, but mutates the collection.

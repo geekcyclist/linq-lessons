@@ -15,7 +15,8 @@
   </Connection>
 </Query>
 
-//var lastAlbum = Albums.OrderBy(a => a.AlbumId).ElementAt(^1);
+// Won't work because the provider returns a DbSet, not IEnumerable compatible
+// var lastAlbum = Albums.OrderBy(a => a.AlbumId).ElementAt(^1);
 
 var enumerableAlbums = Albums.OrderBy(a => a.AlbumId).AsEnumerable();
 

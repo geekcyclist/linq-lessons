@@ -18,7 +18,7 @@ void Main()
 	//allEmployees.Dump();
 	
 	
-	// Using custom comparer
+	// Using custom comparer - NOTE! Uncomment the Comparer at the bottom of this file...
 	//var allEmployeesComparer = employees.Union(repo.RecentEmployees(), new EmployeeComparer());
 	//allEmployessallEmployeesComparer.Dump();
 }
@@ -60,20 +60,20 @@ public class EmployeeRepo
 	}
 }
 
-public class EmployeeComparer : IEqualityComparer<Employee>
-{
-	public bool Equals(Employee left, Employee right)
-	{
-		bool sameId = left.Id == right.Id;
-		
-		bool sameName = left.FirstName.ToLowerInvariant() == right.FirstName.ToLowerInvariant() && 
-			left.LastName.ToLowerInvariant() == right.LastName.ToLowerInvariant();
-		
-		return sameId && sameName;
-	}
-
-	public int GetHashCode(Employee obj)
-	{
-		 return obj.ToString().ToLower().GetHashCode();
-	}
-}
+//public class EmployeeComparer : IEqualityComparer<Employee>
+//{
+//	public bool Equals(Employee left, Employee right)
+//	{
+//		bool sameId = left.Id == right.Id;
+//		
+//		bool sameName = left.FirstName.ToLowerInvariant() == right.FirstName.ToLowerInvariant() && 
+//			left.LastName.ToLowerInvariant() == right.LastName.ToLowerInvariant();
+//		
+//		return sameId && sameName;
+//	}
+//
+//	public int GetHashCode(Employee obj)
+//	{
+//		 return obj.ToString().ToLower().GetHashCode();
+//	}
+//}
